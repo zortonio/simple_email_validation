@@ -1,0 +1,59 @@
+/*Index Page*/
+#new_email{
+  display: block;
+  margin: 300px auto;
+  width: 600px;
+}
+#email{
+  display: inline-block;
+  width: 492px;
+  line-height: 25px;
+  border: 1px solid black;
+}
+#submit{
+  display: block;
+  margin: 20px 540px;
+  right: auto;
+}
+.message{
+  background-color: red;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  margin-top: 10px;
+}
+
+/*Success Page*/
+*{
+  margin: 0 auto;
+}
+#success_message{
+  margin: 20px auto;
+  width: 600px;
+  padding: 10px;
+  font-size: 30px;
+  background-color: green;
+  border: 1px solid black;
+}
+h2{
+  margin: 20px auto;
+  text-decoration: underline;
+  width: 620px;
+}
+#return{
+  width: 620px;
+}
+.line{
+  width: 620px;
+}
+.line p{
+  display: inline-block;
+  width: 270px;
+}
+.entered_email{
+  margin-right: 10px;
+}
+#remove{
+  display: inline-block;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Success Page</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+  </head>
+  <body>
+    <p id="success_message">The email address you entered {{email}} is a valid email address! Thank you!</p>
+    <form id="return" action="/return" method="post">
+      <input type="submit" value="Home">
+    </form>
+    <h2>Email Addresses Entered</h2>
+    {% for email in entered_emails %}
+      <div class="line">
+        <p class="entered_email">{{email['email']}}</p>
+        <p class="time_entered">{{email['created_at']}}</p>
+        <form id="remove" action="/delete" method="post">
+          <input type="submit" value="Delete">
+          <input type="hidden" name="id" value="{{email['id']}}">
+        </form>
+      </div>
+    {% endfor %}
+  </body>
+</html>
